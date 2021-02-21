@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="remote">
+    <header>
+        <div class="navBackground">
+            <div id="pageTitle">
+                <div style="color: yellow">
+                    Desktop-Engineering<span style="color: white"> with</span><span style="color: chartreuse">
+                        $PowerShell</span></div>
+            </div>
+    
+            <div>
+                <ul class="nav">
+                    <li><a href="./index.html" class="nav-link">About this Site</a></li>
+                    <li><a href="./wifi.html" class="nav-link">Adding Wifi</a></li>
+                    <li><a href="./taskbar.html" class="nav-link">The Taskbar</a></li>
+                    <li><a href="./remote.html" class="nav-link">Enable Remoting</a></li>
+                    <li><a href="./software.html" class="nav-link">Install Software</a></li>
+                    <li><a href="./shortcut.html" class="nav-link">Creating Shortcuts</a></li>
+                    <li><a href="./registry.html" class="nav-link">Registry Edits</a></li>
+                    <li><a href="./script.html" class="nav-link">Calling our Scripts</a></li>
+                    <li><a href="./gui.html" class="nav-link">Building a GUI</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+<section class="container">
+    <div class="articleSpacing">
+        <div class="headline">Enable Remoting</div>
+
+        <div>
+    <p> Sometimes when you're on a support call, you'll need to send files to the user's machine, put icons on their
+        desktop, rename things, etc. As long as you're an administrator on the same domain, you can do these tasks in
+        File Explorer, as long as
+        File and Printer Sharing is enabled. Sometimes you'll hear technicians talk about 'sea dollaring' into their
+        machine. That's because in File Explorer, you'll access their C:\ drive by typing '\\machine_name\c$'. But it's
+        turned off by default, so
+        we will enable it with this one-liner:</p>
+
+        <div>
+            <code>Set-NetFirewallRule -DisplayGroup "File and Printer Sharing" -Enabled True -Profile Any</code>
+        </div>
+
+    <p> As handy as it is to access a user's file system, we'll want to go one further, and be able to run PowerShell
+        commands as if we were typing directly on their machine. The following command will allow us, later, to do this
+        with the command:
+        <div>
+            <code>Enter-PSSession -ComputerName "remote_computer"</code>
+        </div>
+
+    <p> and replace "remote_computer" with their device's name. But first we need to enable it, with this intuitive
+        command:</p>
+        <code>Enable-PSRemoting</code>
+
+    <p>Even if your organization is paying
+        for remote support software, I would still recommend enabling these. Typically, retail remote software will
+        allow you to take control of the user's desktop and they can see what you're doing in real time. If you use
+        these tools, you can
+        work on their machine without disrupting them. All the user will know is that they have submitted a ticket, and
+        fifteen minutes later got an email from IT that it's been resolved. They'll think you're a magician!</p>
+    </div>
+    </div>
+</section>
+
+<footer>
+    <div>
+        <a href="./author.html" class="footer-link">About the Author</a>
+    </div>
+</footer>
+
+</body> 
