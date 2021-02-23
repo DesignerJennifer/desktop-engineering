@@ -11,7 +11,7 @@
         rel="stylesheet">
 </head>
 
-<body id="remote">
+<body id="home">
     <header>
         <div class="navBackground">
             <div id="pageTitle">
@@ -19,22 +19,18 @@
                     Desktop-Engineering<span style="color: white"> with</span><span style="color: chartreuse">
                         $PowerShell</span></div>
             </div>
-    
-            <div>
+            <div id="navbar">
                 <ul class="nav">
-                    <li><a href="./index.html" class="nav-link">About this Site</a></li>
-                    <li><a href="./wifi.html" class="nav-link">Adding Wifi</a></li>
-                    <li><a href="./taskbar.html" class="nav-link">The Taskbar</a></li>
-                    <li><a href="./remote.html" class="nav-link">Enable Remoting</a></li>
-                    <li><a href="./software.html" class="nav-link">Install Software</a></li>
-                    <li><a href="./shortcut.html" class="nav-link">Creating Shortcuts</a></li>
-                    <li><a href="./registry.html" class="nav-link">Registry Edits</a></li>
-                    <li><a href="./script.html" class="nav-link">Calling our Scripts</a></li>
-                    <li><a href="./gui.html" class="nav-link">Building a GUI</a></li>
+                    <div class="vertical-menu">
+                        <a href="./index.html" class="nav-link">Home</a>
+                        <a href="./articles.html" class="nav-link">Articles</a>
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                      </div>
+
                 </ul>
             </div>
+
         </div>
-    </header>
 
 <section class="container">
     <div class="articleSpacing">
@@ -45,8 +41,7 @@
     <p> Sometimes when you're on a support call, you'll need to send files to the user's machine, put icons on their
         desktop, rename things, etc. As long as you're an administrator on the same domain, you can do these tasks in
         File Explorer, as long as
-        File and Printer Sharing is enabled. Sometimes you'll hear technicians talk about 'sea dollaring' into their
-        machine. That's because in File Explorer, you'll access their C:\ drive by typing '\\machine_name\c$'. But it's
+        File and Printer Sharing is enabled. In File Explorer, you'll access their C drive by typing <code style="background-color: white; color: black;">'\\machine_name\c$'</code>. But it's
         turned off by default, so
         we will enable it with this one-liner:</p>
 
