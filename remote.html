@@ -41,6 +41,7 @@
         <div class="headline">Enable Remoting</div>
 
         <div>
+            <img src="https://cdn.pixabay.com/photo/2013/04/01/03/45/cat-98359_1280.jpg" style="float: right; max-width: 200px;">
     <p> Sometimes when you're on a support call, you'll need to send files to the user's machine, put icons on their
         desktop, rename things, etc. As long as you're an administrator on the same domain, you can do these tasks in
         File Explorer, as long as
@@ -49,7 +50,7 @@
         turned off by default, so
         we will enable it with this one-liner:</p>
 
-        <div>
+        <div class="codeBlock">
             <code>Set-NetFirewallRule -DisplayGroup "File and Printer Sharing" -Enabled True -Profile Any</code>
         </div>
 

@@ -9,55 +9,69 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
-    <body id="home">
 
-        <header>
+<body id="home">
+
+    <header>
         <div class="navBackground">
             <div id="pageTitle">
                 <div style="color: yellow">
-                Desktop-Engineering<span style="color: white"> with</span><span style="color: chartreuse"> $PowerShell</span></div>
+                    Desktop-Engineering<span style="color: white"> with</span><span style="color: chartreuse">
+                        $PowerShell</span></div>
             </div>
 
             <div>
-            <ul class="nav">
-                <li><a href="./index.html" class="nav-link">About this Site</a></li>
-                <li><a href="./wifi.html" class="nav-link">Adding Wifi</a></li>
-                <li><a href="./taskbar.html" class="nav-link">The Taskbar</a></li>
-                <li><a href="./remote.html" class="nav-link">Enable Remoting</a></li>
-                <li><a href="./software.html" class="nav-link">Install Software</a></li>
-                <li><a href="./shortcut.html" class="nav-link">Creating Shortcuts</a></li>
-                <li><a href="./registry.html" class="nav-link">Registry Edits</a></li>
-                <li><a href="./script.html" class="nav-link">Calling our Scripts</a></li>
-                <li><a href="./gui.html" class="nav-link">Building a GUI</a></li>
-            </ul>
+                <ul class="nav">
+                    <li><a href="./index.html" class="nav-link">About this Site</a></li>
+                    <li><a href="./wifi.html" class="nav-link">Adding Wifi</a></li>
+                    <li><a href="./taskbar.html" class="nav-link">The Taskbar</a></li>
+                    <li><a href="./remote.html" class="nav-link">Enable Remoting</a></li>
+                    <li><a href="./software.html" class="nav-link">Install Software</a></li>
+                    <li><a href="./shortcut.html" class="nav-link">Creating Shortcuts</a></li>
+                    <li><a href="./registry.html" class="nav-link">Registry Edits</a></li>
+                    <li><a href="./script.html" class="nav-link">Calling our Scripts</a></li>
+                    <li><a href="./gui.html" class="nav-link">Building a GUI</a></li>
+                </ul>
             </div>
         </div>
     </header>
 
-        <section class="container">
-            <div class="articleSpacing">
+    <section class="container">
+        <div class="articleSpacing">
             <div class="headline">Why use PowerShell?</div>
 
             <div>
                 <p> PowerShell is Microsoft's cross-platform command line interface and scripting language. Generally
-                    PowerShell is understood to be a tool for server administration, and not used on PCs by support staff.
-                    In fact, it is enabled by default on Windows Server 2019, but is disabled on Windows 10. So why are we
+                    PowerShell is understood to be a tool for server administration, and not used on PCs by support
+                    staff.
+                    In fact, it is enabled by default on Windows Server 2019, but is disabled on Windows 10. So why are
+                    we
                     using it on desktop computers? Well, because we can! It allows us to automate repetitive tasks, each
-                    script is itself a record of the changes we make, it allows us to manage systems remotely, it comes with
+                    script is itself a record of the changes we make, it allows us to manage systems remotely, it comes
+                    with
                     Windows by default, it's powerful and it's free. There's a series of videos that serve as a great
-                    introduction 
-                    <a href=https://channel9.msdn.com/Series/Getting-Started-with-Microsoft-PowerShell target="_blank" rel="noopener noreferrer" style="color: blue">here.</a>
+                    introduction
+                    <a href=https://channel9.msdn.com/Series/Getting-Started-with-Microsoft-PowerShell target="_blank"
+                        rel="noopener noreferrer" style="color: blue">here.</a>
                 </p>
 
-                <p>This site will probably be of interest mostly to Desktop Techs, Bench Techs, HelpDesk staff, or anyone
-                    supporting the end user. The focus will be on deployment - that is, preparing computers for others, but
+                <p>This site will probably be of interest mostly to Desktop Techs, Bench Techs, HelpDesk staff, or
+                    anyone
+                    supporting the end user. The focus will be on deployment - that is, preparing computers for others,
+                    but
                     they can be used for remote support, or even just run from a flash drive. I'm writing it mainly for
-                    myself, to reinforce my own learning, but I would be overjoyed if someone was able to find something here that is
-                    useful to him or her. I won't cover how to set up a deployment server, but if you don't have one, you
-                    may want to start 
-                    <a href=https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit target="_blank" rel="noopener noreferrer" style="color: blue">here</a> first, and get familiar with the Microsoft Deployment Toolkit and the Workbench.
+                    myself, to reinforce my own learning, but I would be overjoyed if someone was able to find something
+                    here that is
+                    useful to him or her. I won't cover how to set up a deployment server, but if you don't have one,
+                    you
+                    may want to start
+                    <a href=https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit
+                        target="_blank" rel="noopener noreferrer" style="color: blue">here</a> first, and get familiar
+                    with the Microsoft Deployment Toolkit and the Workbench.
                 </p>
             </div>
 
@@ -66,38 +80,49 @@
             </div>
 
             <div>
-                <p>There's a few things that anyone, regardless of skill level, should keep in mind when writing and running
+                <p>There's a few things that anyone, regardless of skill level, should keep in mind when writing and
+                    running
                     scripts.</p>
-            <ol start="1">
-                <li class="num-li">Read and understand any script before you run it.</li>
+                <ol start="1">
+                    <li class="num-li">Read and understand any script before you run it.</li>
 
-                <p>If you are using a script or snippet that someone else wrote, whether it's from a random internet
-                    post, official documentation, or a contractor, you should be able to explain what exactly a script
-                    does and why before you run it. This is paramount to learning, and being proficient in PowerShell
-                    can be a great boon to a career for anyone working in Information Technology or a related field.
-                    More importantly, if you don't know what the script is doing, you could potentially cause great
-                    damage. The writer may not know peculiarities of your particular environment, or he may be
-                    incompetent, or he may be purposefully malicious. Here, the Get-Help cmdlet and -WhatIf switch can
-                    be extremely useful.
-                </p>
+                    <p>If you are using a script or snippet that someone else wrote, whether it's from a random internet
+                        post, official documentation, or a contractor, you should be able to explain what exactly a
+                        script
+                        does and why before you run it. This is paramount to learning, and being proficient in
+                        PowerShell
+                        can be a great boon to a career for anyone working in Information Technology or a related field.
+                        More importantly, if you don't know what the script is doing, you could potentially cause great
+                        damage. The writer may not know peculiarities of your particular environment, or he may be
+                        incompetent, or he may be purposefully malicious. Here, the Get-Help cmdlet and -WhatIf switch
+                        can
+                        be extremely useful.
+                    </p>
 
-                <li class="num-li">Measure twice, cut once.</li>
-                <p>Excuse the hackneyed expression, it's fitting here. Be meticulous. Be thoughtful. Be slow, if
-                    necessary, because it will save you time in the long run. If you're writing a script for a task that
-                    takes 10 minutes, and will be run on 300 machines, you are saving 50 hours of work. You can afford
-                    to take an extra half-hour to make sure your script works precisely the way you want.
-                </p>
+                    <li class="num-li">Measure twice, cut once.</li>
+                    <p>Excuse the hackneyed expression, it's fitting here. Be meticulous. Be thoughtful. Be slow, if
+                        necessary, because it will save you time in the long run. If you're writing a script for a task
+                        that
+                        takes 10 minutes, and will be run on 300 machines, you are saving 50 hours of work. You can
+                        afford
+                        to take an extra half-hour to make sure your script works precisely the way you want.
+                    </p>
 
-                <li class="num-li">Develop good habits.</li>
+                    <li class="num-li">Develop good habits.</li>
 
-                <p>There's the easy way and there's the correct way, and frankly speaking, when it comes to scripting,
-                    it's usually the same damn thing. But sometimes it's not, and if you find yourself putting out
-                    fires, you may want to jump in "real quick" and do something a hundred times manually, clicking
-                    through menus, or just assign the intern to do it. Don't. Open your IDE and get some practice. Also,
-                    if you start to notice that your scripts could be described as "hacky," you need to step back and
-                    reevaluate your methods. If you aren't proud of your script, you need to rewrite it until you are.
-                </p>
-            </ol>
+                    <p>There's the easy way and there's the correct way, and frankly speaking, when it comes to
+                        scripting,
+                        it's usually the same damn thing. But sometimes it's not, and if you find yourself putting out
+                        fires, you may want to jump in "real quick" and do something a hundred times manually, clicking
+                        through menus, or just assign the intern to do it. Don't. Open your IDE and get some practice.
+                        Also,
+                        if you start to notice that your scripts could be described as "hacky," you need to step back
+                        and
+                        reevaluate your methods. If you aren't proud of your script, you need to rewrite it until you
+                        are.
+                    </p>
+                </ol>
+            </div>
         </div>
     </section>
 
@@ -108,8 +133,8 @@
         </div>
     </footer>
 
-        <script src="./main.js">
-        
-        </script>
+    <script src="./main.js">
+
+    </script>
 
 </body>

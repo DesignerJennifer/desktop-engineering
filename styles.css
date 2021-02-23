@@ -89,8 +89,8 @@ a:visited {
 
 /* margins and padding for articles */
 .articleSpacing {
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 /* paragraph style */
@@ -125,7 +125,8 @@ footer {
     width: 100%;
     padding: 10px 0;
     flex-grow: 0;
-    position: static;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer-link {
