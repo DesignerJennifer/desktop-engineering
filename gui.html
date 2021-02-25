@@ -34,9 +34,140 @@
 
 <section class="container">
     <div class="articleSpacing">    
-        <div class="headline">Building a GUI</div>
+        <div class="headline"">Building a GUI</div>
         <div>
-            <p>WIP</p>
+            <p>WIP
+                <div class="code_block">
+                <code>
+
+                if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
+
+                    Function Button_Click_1()
+                    {
+                       write-host Example function 1
+                    }
+                    
+                    Function Button_Click_2()
+                    {
+                       write-host Example function 2
+                    }
+                    
+                    Function Button_Click_3()
+                    {
+                       write-host Example function 3
+                    }
+                    
+                    Function Button_Click_3()
+                    {
+                       write-host Example function 3
+                    }
+                    
+                    Function Button_Click_4()
+                    {
+                       write-host Example function 4
+                    }
+                    
+                    Function Button_Click_5()
+                    {
+                       write-host Example function 5
+                    }
+                    
+                    Function Button_Click_6()
+                    {
+                       write-host Example function 6
+                    }
+                    
+                    Function Generate-Form {
+                    
+                        Add-Type -AssemblyName System.Windows.Forms    
+                        Add-Type -AssemblyName System.Drawing
+                       
+                    
+                        $Form = New-Object System.Windows.Forms.Form
+                        $Form.Text = "GUI Title"
+                        $Form.Size = New-Object System.Drawing.Size(375,280)
+                        $Form.StartPosition = "CenterScreen"
+                        $Form.Topmost = $True
+                    
+                    
+                        $Label1 = New-Object System.Windows.Forms.Label
+                        $Label1.Text = "Section Title"
+                        $Label1.AutoSize = $true
+                        $Label1.Location = New-Object System.Drawing.Size(20,15)
+                        $Form.Controls.Add($Label1)
+                    
+                    
+                        $Button_1 = New-Object System.Windows.Forms.Button
+                        $Button_1.Location = New-Object System.Drawing.Size(35,45)
+                        $Button_1.Size = New-Object System.Drawing.Size(120,23)
+                        $Button_1.Text = "Button 1"
+                    
+                        $Form.Controls.Add($Button_1)
+                    
+                    
+                        $Button_3 = New-Object System.Windows.Forms.Button
+                        $Button_3.Location = New-Object System.Drawing.Size(35,85)
+                        $Button_3.Size = New-Object System.Drawing.Size(120,23)
+                        $Button_3.Text = "Button 3"
+                    
+                        $Form.Controls.Add($Button_3)
+                    
+                    
+                        $Button_5 = New-Object System.Windows.Forms.Button
+                        $Button_5.Location = New-Object System.Drawing.Size(35,125)
+                        $Button_5.Size = New-Object System.Drawing.Size(120,23)
+                        $Button_5.Text = "Button 5"
+                    
+                        $Form.Controls.Add($Button_5)
+                    
+                    
+                        $Button_2 = New-Object System.Windows.Forms.Button
+                        $Button_2.Location = New-Object System.Drawing.Size(200,45)
+                        $Button_2.Size = New-Object System.Drawing.Size(120,23)
+                        $Button_2.Text = "Button 2"
+                    
+                        $Form.Controls.Add($Button_2)
+                    
+                    
+                        $Button_4 = New-Object System.Windows.Forms.Button
+                        $Button_4.Location = New-Object System.Drawing.Size(200,85)
+                        $Button_4.Size = New-Object System.Drawing.Size(120,23)
+                        $Button_4.Text = "Button 4"
+                    
+                        $Form.Controls.Add($Button_4)
+                    
+                       
+                        $Button_6 = New-Object System.Windows.Forms.Button
+                        $Button_6.Location = New-Object System.Drawing.Size(200,125)
+                        $Button_6.Size = New-Object System.Drawing.Size(120,23)
+                        $Button_6.Text = "Button 6"
+                    
+                        $Form.Controls.Add($Button_6)
+                    
+                    
+                    
+                        $Done_Button = New-Object System.Windows.Forms.Button
+                        $Done_Button.Location = New-Object System.Drawing.Size(120,200)
+                        $Done_Button.Size = New-Object System.Drawing.Size(120,23)
+                        $Done_Button.Text = "Done"
+                    
+                        $Form.Controls.Add($Done_Button)
+                    
+                        $Done_Button.Add_Click({$Form.Close()})
+                    
+                    
+                        $Button_1.Add_Click({Button_Click_1})
+                        $Button_2.Add_Click({Button_Click_2})
+                        $Button_3.Add_Click({Button_Click_3})
+                        $Button_4.Add_Click({Button_Click_4})
+                        $Button_5.Add_Click({Button_Click_5})
+                        $Button_6.Add_Click({Button_Click_6})
+                    
+                    
+                        $form.ShowDialog()| Out-Null
+                    } 
+                    Generate-Form</code></div class="code_block">
+            </p>
         </div>
 </section>
 

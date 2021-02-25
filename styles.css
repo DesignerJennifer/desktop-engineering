@@ -127,7 +127,11 @@ code {
     font-size: 16px;
     color: white;
     background-color: #012456;
-    white-space: nowrap;
+    white-space: wrap;
+}
+
+.code_block {
+    width: 50%;
 }
 
 footer {
@@ -150,6 +154,11 @@ footer {
     
 }
 
+#portrait {
+    width: 20em;
+    border-radius: 50%;
+    float: right;
+}
 
 
 @media only screen 
