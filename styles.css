@@ -10,6 +10,15 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+section {
+    padding-bottom: 10%;
+}
+
+.articles {
+    margin: 0;
+}
+
 .container {
     background-color: white;
     
