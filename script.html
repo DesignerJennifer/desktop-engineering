@@ -34,7 +34,7 @@
 
     <section class="container">
         <div class="articleSpacing">
-            <div class="headline">Calling our Scripts</div>
+            <div class="headline">Calling Scripts</div>
 
             <p> Now that we have all of our scripts written, we need to make sure that they will actually run. If we are running these as Scripts from the Deployment Workbench, Windows should give the script the required permissions. However, if we are running
                 these scripts as Applications, or on machines that have already been deployed, we're going to have to make sure that the scripts are elevated properly. To do this, open the Application on the Workbench, go to the 'Quiet Install Command' line under 'Details', 
@@ -47,7 +47,7 @@
             <p> The Execution Policy is restricted by default, so you'll get an error message if you try to call the script directly. Another problem that we may encounter
                 is that the script may run without administrator privileges. We can include a line in each of our scripts, which will check if the session is running as administrator, and if not, open a new window and run the rest of the script as administrator:</p>
 
-                <div>
+                <div class="code_block">
                     <code>if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))</code>
                 </div>
     </div>

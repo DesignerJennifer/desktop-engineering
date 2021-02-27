@@ -39,7 +39,7 @@
         <p> A lot of users don't use bookmarks in their browsers, so if we want them to access a web app, the best way is to give them a shortcut on the desktop. While each user has their own desktop, the public desktop located at C:\Users\Public\Desktop 
             applies to all users on the machine, they will see these icons appearing along with the ones on their local profile.</p> 
         
-            <div>
+            <div class="code_block">
                 <code>$desktop = ([Environment]::GetEnvironmentVariable("Public"))+"\Desktop"<br>$SourceFileLocation = “https://domain.com/webapp”<br>
                 $ShortcutLocation = “$Desktop\webapp.lnk”<br>$WScriptShell = New-Object -ComObject WScript.Shell<br>$Shortcut = $WScriptShell.CreateShortcut($ShortcutLocation)<br>$Shortcut.IconLocation = "$PSScriptRoot\youricon.ico, 0"<br>
                 $Shortcut.TargetPath = $SourceFileLocation<br>$Shortcut.Save()</code>

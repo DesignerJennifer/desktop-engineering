@@ -21,6 +21,18 @@ body {
     line-height: 150%;
     font-family: 'Roboto Mono', monospace;
 }
+
+.contact_links {
+        color: black;
+        font-size: 24px;
+        line-height: 150%;
+        font-family: 'Roboto Mono', monospace;
+        white-space: nowrap;
+        margin-left: 5%;
+        margin-right: 3%;
+        margin-top: 10%;
+}
+
 /* Background for navitation */
 .navBackground {
     overflow-x: auto;
@@ -46,7 +58,6 @@ body {
 /* vertical margins for menu items */
 .nav a{
     display: inline-block;
-    padding: 6p x;
 }
 
 /* Page title */
@@ -131,7 +142,14 @@ code {
 }
 
 .code_block {
-    width: 50%;
+  
+    border: 10px;
+    border-color: black;
+    border-radius: 10px;
+    background-color:  #012456;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    white-space: nowrap;
 }
 
 footer {
@@ -155,9 +173,10 @@ footer {
 }
 
 #portrait {
-    width: 20em;
+    width: 10em;
     border-radius: 50%;
-    float: right;
+    float: left;
+    padding: 5%;
 }
 
 

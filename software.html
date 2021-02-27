@@ -41,7 +41,7 @@
             free apps like Google Chrome, Adobe Reader, and VLC, this can be a quick and easy solution. Of course, you can also set up your own software repository, but I won't cover that here since the website already has good instructions on how to do this. So,
             to use the publicly maintained packages, we'll write a script that looks like this:</p>
 
-            <div>
+            <div class="code_block">
                 <code>Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
                     <br>choco upgrade vlc -y<br>choco upgrade adobereader -y<br>choco upgrade silverlight -y
                 </code>
