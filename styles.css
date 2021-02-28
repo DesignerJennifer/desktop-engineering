@@ -30,7 +30,6 @@ section {
     font-size: 24px;
     line-height: 150%;
     font-family: 'Roboto Mono', monospace;
-    white-space: nowrap;
 }
 
 .contact_links {
@@ -246,4 +245,8 @@ and (orientation: portrait)  {
     width: 100%;
 
 }
+
+.articleSpacing {
+    margin-left: 8%;
+    margin-right: 8%;
 }
